@@ -1,0 +1,17 @@
+{
+  "name": "kitodo/presentation-package",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "homepage": "https://www.effective-webwork.de/",
+  "license": ["GPL-3.0-or-later"],
+  "keywords": ["TYPO3 CMS"],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": "7.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eww\\KitodoPresentationPackage\\": "Classes/"
+    }
+  }
+}
