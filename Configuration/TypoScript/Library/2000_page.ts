@@ -3,12 +3,12 @@
 page = PAGE
 
 ## Favicon
-page.shortcutIcon = {$resDir}/Public/Icons/favicon.ico
+page.shortcutIcon = EXT:presentation-package/Resources/Public/Icons/favicon.ico
 
 ## CSS Dateien laden
 page.includeCSS {
-	main = {$resDir}/Public/Css/main.css
-	styles = {$resDir}/Public/Css/styles.css
+	main = EXT:presentation-package/Resources/Public/Css/main.css
+	styles = EXT:presentation-package/Resources/Public/Css/styles.css
 }
 
 ## JavaScript laden
@@ -16,11 +16,11 @@ page.includeJSlibs {
 }
 
 page.includeJSFooterlibs {
-	jquery = {$resDir}/Public/JavaScript/vendor/jquery-1.11.2.min.js
+	#jquery = {$resDir}/Public/JavaScript/vendor/jquery-1.11.2.min.js
 }
 
 page.includeJSFooter {
-	main = {$resDir}/Public/JavaScript/main.js
+	main = EXT:presentation-package/Resources/Public/JavaScript/main.js
 }
 
 page.10 = FLUIDTEMPLATE
@@ -28,9 +28,15 @@ page.10 {
 	#partialRootPath = {$resDir}/Private/Partials
 	#layoutRootPath = {$resDir}/Private/Layouts
 
-	templateRootPath = EXT:presentation-package/Resources/Private/Templates
-	partialRootPath = EXT:presentation-package/Resources/Private/Partials
-	layoutRootPath = EXT:presentation-package/Resources/Private/Layouts
+	layoutRootPaths {
+		10 = EXT:presentation-package/Resources/Private/Layouts
+	}
+	partialRootPaths {
+		10 = EXT:presentation-package/Resources/Private/Partials
+	}
+	templateRootPaths {
+		10 = EXT:presentation-package/Resources/Private/Templates
+	}
 
 	variables {
 		contentMain < styles.content.get
@@ -57,7 +63,7 @@ page.10.file.stdWrap.cObject {
 
 	# Default Template
 	default = TEXT
-	default.value = {$resDir}/Private/Templates/DefaultTemplate.html
+	default.value = EXT:presentation-package/Resources/Private/Templates/DefaultTemplate.html
 
 	pagets__1 < .default
 
