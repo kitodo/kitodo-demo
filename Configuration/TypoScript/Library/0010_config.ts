@@ -1,5 +1,5 @@
 config {
-	pageRendererTemplateFile = {$resDir}/Private/Templates/PageRenderer.html
+	pageRendererTemplateFile = EXT:presentation-package/Resources/Private/Templates/PageRenderer.html
 
 	absRefPrefix = /
 	tx_realurl_enable = 1

@@ -16,7 +16,7 @@ page.includeJSlibs {
 }
 
 page.includeJSFooterlibs {
-	#jquery = {$resDir}/Public/JavaScript/vendor/jquery-1.11.2.min.js
+	#jquery = EXT:presentation-package/Resources/Public/JavaScript/vendor/jquery-1.11.2.min.js
 }
 
 page.includeJSFooter {
@@ -25,8 +25,8 @@ page.includeJSFooter {
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-	#partialRootPath = {$resDir}/Private/Partials
-	#layoutRootPath = {$resDir}/Private/Layouts
+	#partialRootPath = EXT:presentation-package/Resources/Private/Partials
+	#layoutRootPath = EXT:presentation-package/Resources/Private/Layouts
 
 	layoutRootPaths {
 		10 = EXT:presentation-package/Resources/Private/Layouts
@@ -54,7 +54,7 @@ page.10 {
 		}
 	}
 
-	#file = {$resDir}/Private/Templates/DefaultTemplate.html
+	#file = EXT:presentation-package/Resources/Private/Templates/DefaultTemplate.html
 }
 
 page.10.file.stdWrap.cObject = CASE
