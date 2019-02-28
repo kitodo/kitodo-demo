@@ -1,5 +1,5 @@
 {
-  "name": "kitodo/presentation-package",
+  "name": "kitodo/presentation_package",
   "type": "typo3-cms-extension",
   "description": "Template Package for Kitodo Presentation",
   "homepage": "https://www.effective-webwork.de/",

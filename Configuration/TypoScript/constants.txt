@@ -2,7 +2,7 @@
 
 <INCLUDE_TYPOSCRIPT: source="DIR: ./Library" extensions="txt">
 
-resDir = EXT:presentation-package/Resources
+resDir = EXT:presentation_package/Resources
 
 ## Default-Werte fuer meta-tags
 defaultDescription = Das ist meine erste Distribution

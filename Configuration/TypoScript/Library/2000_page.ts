@@ -3,12 +3,12 @@
 page = PAGE
 
 ## Favicon
-page.shortcutIcon = EXT:presentation-package/Resources/Public/Icons/favicon.ico
+page.shortcutIcon = {$resDir}/Resources/Public/Icons/favicon.ico
 
 ## CSS Dateien laden
 page.includeCSS {
-	main = EXT:presentation-package/Resources/Public/Css/main.css
-	styles = EXT:presentation-package/Resources/Public/Css/styles.css
+	main = {$resDir}/Resources/Public/Css/main.css
+	styles = {$resDir}/Resources/Public/Css/styles.css
 }
 
 ## JavaScript laden
@@ -16,26 +16,26 @@ page.includeJSlibs {
 }
 
 page.includeJSFooterlibs {
-	#jquery = EXT:presentation-package/Resources/Public/JavaScript/vendor/jquery-1.11.2.min.js
+	#jquery = {$resDir}/Resources/Public/JavaScript/vendor/jquery-1.11.2.min.js
 }
 
 page.includeJSFooter {
-	main = EXT:presentation-package/Resources/Public/JavaScript/main.js
+	main = {$resDir}/Resources/Public/JavaScript/main.js
 }
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-	#partialRootPath = EXT:presentation-package/Resources/Private/Partials
-	#layoutRootPath = EXT:presentation-package/Resources/Private/Layouts
+	#partialRootPath = {$resDir}/Resources/Private/Partials
+	#layoutRootPath = {$resDir}/Resources/Private/Layouts
 
 	layoutRootPaths {
-		10 = EXT:presentation-package/Resources/Private/Layouts
+		10 = {$resDir}/Resources/Private/Layouts
 	}
 	partialRootPaths {
-		10 = EXT:presentation-package/Resources/Private/Partials
+		10 = {$resDir}/Resources/Private/Partials
 	}
 	templateRootPaths {
-		10 = EXT:presentation-package/Resources/Private/Templates
+		10 = {$resDir}/Resources/Private/Templates
 	}
 
 	variables {
@@ -54,7 +54,7 @@ page.10 {
 		}
 	}
 
-	#file = EXT:presentation-package/Resources/Private/Templates/DefaultTemplate.html
+	#file = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
 }
 
 page.10.file.stdWrap.cObject = CASE
@@ -63,7 +63,7 @@ page.10.file.stdWrap.cObject {
 
 	# Default Template
 	default = TEXT
-	default.value = EXT:presentation-package/Resources/Private/Templates/DefaultTemplate.html
+	default.value = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
 
 	pagets__1 < .default
 
