@@ -25,8 +25,12 @@ page.includeJSFooter {
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-	partialRootPath = {$resDir}/Private/Partials
-	layoutRootPath = {$resDir}/Private/Layouts
+	#partialRootPath = {$resDir}/Private/Partials
+	#layoutRootPath = {$resDir}/Private/Layouts
+
+	templateRootPath = EXT:presentation-package/Resources/Private/Templates
+	partialRootPath = EXT:presentation-package/Resources/Private/Partials
+	layoutRootPath = EXT:presentation-package/Resources/Private/Layouts
 
 	variables {
 		contentMain < styles.content.get
