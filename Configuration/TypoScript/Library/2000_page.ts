@@ -3,11 +3,12 @@
 page = PAGE
 
 ## Favicon
-#page.shortcutIcon = {$resDir}/Public/Icons/favicon.ico
+page.shortcutIcon = {$resDir}/Public/Icons/favicon.ico
 
 ## CSS Dateien laden
 page.includeCSS {
 	main = {$resDir}/Public/Css/main.css
+	styles = {$resDir}/Public/Css/styles.css
 }
 
 ## JavaScript laden
@@ -30,9 +31,15 @@ page.10 {
 	variables {
 		contentMain < styles.content.get
 		contentAside < styles.content.get
-		contentAside.select.where = colPos = 1
+		contentAside.select.where = colPos = 2
 		contentAside.stdWrap {
-			wrap = <div>|</div>
+			wrap = |
+			required = 1
+		}
+		contentHeader < styles.content.get
+		contentHeader.select.where = colPos = 1
+		contentHeader.stdWrap {
+			wrap = |
 			required = 1
 		}
 	}

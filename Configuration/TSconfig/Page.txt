@@ -15,13 +15,22 @@ TCEFORM.tt_content.header_layout{
 mod.web_layout.BackendLayouts {
 
 	1 {
-		title = Default Layout (2 Spalten)
+		title = Default Layout (Header + 2 Spalten)
 		config {
 			backend_layout {
-            	colCount = 3
-            	rowCount = 1
+            	colCount = 2
+            	rowCount = 2
             	rows {
-            		1 {
+            	    1 {
+            	        columns {
+            	            1 {
+            	                name = Header Content
+            	                colspan = 3
+            	                colPos = 1
+            	            }
+            	        }
+            	    },
+            		2 {
             			columns {
             				1 {
             					name = Main Content
@@ -30,7 +39,7 @@ mod.web_layout.BackendLayouts {
             				}
             				2 {
             					name = Aside
-            					colPos = 1
+            					colPos = 2
             				}
             			}
             		}
