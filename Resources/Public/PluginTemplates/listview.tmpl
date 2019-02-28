@@ -1,0 +1,57 @@
+<!--
+ * (c) Kitodo. Key to digital objects e.V. <contact@kitodo.org>
+ *
+ * This file is part of the Kitodo and TYPO3 projects.
+ *
+ * @license GNU General Public License version 3 or later.
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+-->
+<!-- ###TEMPLATE### -->
+
+###LISTTHUMBNAIL###
+###LISTDESCRIPTION###
+
+<div class="listview-headline-sort">
+    <h2 class="tx-dlf-listview-label">###LISTTITLE###</h2>
+
+    ###SORTING###
+</div>
+
+<div class="listview-headline-addon">
+    <p class="tx-dlf-listview-counts">###COUNT###</p>
+    <p class="tx-dlf-listview-pagebrowser">###PAGEBROWSER###</p>
+</div>
+
+
+<ol class="tx-dlf-listview-list">
+    <!-- ###ENTRY### -->
+    <li value="###NUMBER###">
+        <div class="tx-dlf-listview-thumbnail">###THUMBNAIL###</div>
+        <dl>
+            ###METADATA###
+        </dl>
+        <div class="tx-dlf-listview-preview">###PREVIEW###</div>
+        <!-- ###SUBTEMPLATE### -->
+        <ol>
+            <!-- ###SUBENTRY### -->
+            <li>
+                <div class="tx-dlf-listview-thumbnail">###SUBTHUMBNAIL###</div>
+                <dl>
+                    ###SUBMETADATA###
+                </dl>
+                <div class="tx-dlf-listview-preview">###SUBPREVIEW###</div>
+            </li>
+            <div class="add-to-cart">###SUBBASKETBUTTON###</div>
+            <!-- ###SUBENTRY### -->
+        </ol>
+        <!-- ###SUBTEMPLATE### -->
+        <div class="add-to-cart">###BASKETBUTTON###</div>
+        <div class="show-volumes">
+            <a href="" class="show-volumes-expand">Exemplare</a>
+            <!--<a href="" class="show-volumes-minimize">Exemplare</a>-->
+        </div>
+    </li>
+    <!-- ###ENTRY### -->
+</ol>
+<!-- ###TEMPLATE### -->

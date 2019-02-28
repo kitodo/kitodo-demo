@@ -1,0 +1,8 @@
+.dropdown-menu ul li a {
+    padding: 0px !important;
+    font-weight: 400;
+}
+
+.dropdown-menu label {
+    padding-top: 0px !important;
+}

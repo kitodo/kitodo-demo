@@ -1,7 +1,12 @@
 <f:layout name="DefaultLayout" />
 <f:section name="Main">
-<div class="main-container">
-	<f:format.raw>{contentMain}</f:format.raw>
-	<f:format.raw>{contentAside}</f:format.raw>
-</div>
+<main>
+	<aside>
+		<f:format.raw>{contentAside}</f:format.raw>
+	</aside>
+
+	<section id="main-content">
+		<f:format.raw>{contentMain}</f:format.raw>
+	</section>
+</main>
 </f:section>
