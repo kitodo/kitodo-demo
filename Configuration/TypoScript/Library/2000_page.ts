@@ -40,15 +40,45 @@ page.10 {
 
 	variables {
 		contentMain < styles.content.get
+
 		contentAside < styles.content.get
 		contentAside.select.where = colPos = 2
 		contentAside.stdWrap {
 			wrap = |
 			required = 1
 		}
+
 		contentHeader < styles.content.get
 		contentHeader.select.where = colPos = 1
 		contentHeader.stdWrap {
+			wrap = |
+			required = 1
+		}
+
+		contentTOC < styles.content.get
+		contentTOC.select.where = colPos = 3
+		contentTOC.stdWrap {
+			wrap = |
+			required = 1
+		}
+
+		contentMetadata < styles.content.get
+		contentMetadata.select.where = colPos = 4
+		contentMetadata.stdWrap {
+			wrap = |
+			required = 1
+		}
+
+		contentTools < styles.content.get
+		contentTools.select.where = colPos = 5
+		contentTools.stdWrap {
+			wrap = |
+			required = 1
+		}
+
+		contentNavigation < styles.content.get
+		contentNavigation.select.where = colPos = 6
+		contentNavigation.stdWrap {
 			wrap = |
 			required = 1
 		}
@@ -66,5 +96,10 @@ page.10.file.stdWrap.cObject {
 	default.value = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
 
 	pagets__1 < .default
+
+	detail = TEXT
+	detail.value = {$resDir}/Resources/Private/Templates/DetailTemplate.html
+
+	pagets__2 < .detail
 
 }

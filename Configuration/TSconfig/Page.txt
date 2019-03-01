@@ -47,4 +47,52 @@ mod.web_layout.BackendLayouts {
             }
 		}
 	}
+    2 {
+        title = Presentation Detail Layout
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Navigation
+                                colspan = 3
+                                colPos = 6
+                            }
+                        }
+                    },
+                    2 {
+                        columns {
+                            1 {
+                                name = TOC
+                                #colspan = 1
+                                colPos = 3
+                            }
+                            2 {
+                                name = Metadata
+                                #colspan = 1
+                                colPos = 4
+                            }
+                            3 {
+                                name = Tools
+                                #colspan = 1
+                                colPos = 5
+                            }
+                        }
+                    },
+                    3 {
+                        columns {
+                            1 {
+                                name = Main Content
+                                colspan = 3
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
