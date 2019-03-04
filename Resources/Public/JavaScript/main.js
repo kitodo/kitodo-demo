@@ -1,5 +1,7 @@
 
 
+// listview
+
 $(".tx-dlf-listview-list ol").hide();
 
 $(".tx-dlf-listview-list ol").hide();
@@ -8,11 +10,22 @@ $(".tx-dlf-listview-list ol").hide();
 // show-volumes-expand
 // show-volumes-minimize
 
+$(".show-volumes").each(function () {
+    if ($(this).parent().find("ol").length > 0) {
+        $(this).show();
+    }
+});
+
 $(".show-volumes").on("click", function (evt) {
     evt.preventDefault();
     $(this).children("a").toggleClass("down");
     $(this).parent().find("ol").toggle();
 });
+
+
+
+
+// Detailview
 
 $('.tx-dlf-navigation-double a, .tx-dlf-navigation-double span')
     .text("")
@@ -70,4 +83,10 @@ $('.tx-dlf-navigation-listview a, .tx-dlf-navigation-listview span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-skipright.svg" alt="Last Page">');
 
+
+$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-edit'));
+
+$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-editRemove'));
+
+$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-magnifier'));
 

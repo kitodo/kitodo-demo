@@ -25,8 +25,13 @@ mod.web_layout.BackendLayouts {
             	        columns {
             	            1 {
             	                name = Header Content
-            	                colspan = 3
+            	                colspan = 2
             	                colPos = 1
+            	            }
+            	            2 {
+            	                name = Basket
+            	                colspan = 1
+            	                colPos = 7
             	            }
             	        }
             	    },
@@ -58,8 +63,13 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Navigation
-                                colspan = 3
+                                colspan = 2
                                 colPos = 6
+                            }
+                            2 {
+                                name = Basket
+                                colspan = 1
+                                colPos = 7
                             }
                         }
                     },
@@ -106,8 +116,13 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Header Content
-                                colspan = 3
+                                colspan = 2
                                 colPos = 1
+                            }
+                            2 {
+                                name = Basket
+                                colspan = 1
+                                colPos = 7
                             }
                         }
                     },

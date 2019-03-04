@@ -82,6 +82,13 @@ page.10 {
 			wrap = |
 			required = 1
 		}
+
+		contentBasket < styles.content.get
+		contentBasket.select.where = colPos = 7
+		contentBasket.stdWrap {
+			wrap = |
+			required = 1
+		}
 	}
 
 	#file = {$resDir}/Resources/Private/Templates/DefaultTemplate.html

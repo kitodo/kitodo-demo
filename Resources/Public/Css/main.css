@@ -54,3 +54,119 @@ li.tx-dlf-navigation-pageselect label {
 .tx-dlf-pagegrid-cur .tx-dlf-pagegrid-thumbnail img {
     border: 2px solid #0071BC;
 }
+
+.tx-dlf-listview img {
+    display: none;
+}
+
+.show-volumes {
+    display:none;
+}
+
+.highlight {
+    background-color: #0071bc;
+    color: white;
+}
+
+div#tx-dlf-fulltextselection {
+    padding: 10px;
+}
+
+
+.image-manipulation .slider-container .slider .ui-slider-handle:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background: #f33;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    content: "";
+}
+
+.image-manipulation .slider-container .slider-brightness:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAcElEQ…OQ1s7Az5fpG9I4w8Zk8OC1z0C/Va/yBfXEC1G9He0UlN8eX+sBaLOILAAAAABJRU5ErkJggg==) no-repeat 0 0;
+}
+
+.image-manipulation .slider-container .slider:before {
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    width: 14px;
+    height: 14px;
+    content: "";
+}
+
+.image-manipulation .slider-container .slider {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    border: 0 none;
+    border-radius: 0;
+    background: transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-right: 24px;
+}
+
+.image-manipulation .slider-container .slider .ui-slider-handle {
+    border-radius: 0;
+    border: 0 none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.slider-imagemanipulation.ui-slider-horizontal .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    background: #00b19e;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+    cursor: col-resize;
+    margin-left: -6px;
+}
+
+.slider {
+    top: 10px;
+    padding: 5px;
+    border-top: 3px solid #0071bc !important;
+    padding-bottom: 10px;
+}
+
+.slider-container.open {
+    padding: 10px;
+}
+
+.image-manipulation {
+    border: 1px solid #d8d8d8;
+}
+
+.image-manipulation .checkbox label input {
+    margin-right: 10px;
+}
+
+.meta-batchcount {
+    position: relative;
+
+}
+
+.tx-dlf-goto-basket label {
+    display:none;
+}
+
+.meta-navigation .tx-dlf-basket {
+    background-color: transparent;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+}
+
+.tx-dlf-goto-basket a::after {
+    content: url("../../typo3conf/ext/presentation_package/Resources/Public/Images//icon-star.svg");
+}
