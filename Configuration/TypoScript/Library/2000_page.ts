@@ -102,4 +102,9 @@ page.10.file.stdWrap.cObject {
 
 	pagets__2 < .detail
 
+	onecol = TEXT
+	onecol.value = {$resDir}/Resources/Private/Templates/OneColumn.html
+
+	pagets__3 < .onecol
+
 }
