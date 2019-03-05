@@ -167,6 +167,22 @@ div#tx-dlf-fulltextselection {
     box-shadow: none;
 }
 
-.tx-dlf-goto-basket a::after {
-    content: url("../../typo3conf/ext/presentation_package/Resources/Public/Images//icon-star.svg");
+.meta-navigation .tx-dlf-goto-basket a::after {
+    content: url("../Images/icon-star.svg");
+}
+
+.meta-navigation .meta-batchcount {
+    top: -10px !important;
+}
+
+.dropdown-menu li.tx-dlf-search-no label {
+    padding-top: 0px;
+}
+
+dd.secondpart {
+    display: none;
+}
+
+dt.secondpart {
+    display: none;
 }

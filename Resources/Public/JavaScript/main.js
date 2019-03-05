@@ -27,6 +27,17 @@ $(".show-volumes").on("click", function (evt) {
 
 // Detailview
 
+// return to list link
+if ($('.tx-dlf-navigation-listview a').length > 0) {
+    $('.meta-actions #backlink').show();
+    $('.meta-actions #backlink').attr( "href", $('.tx-dlf-navigation-listview a').attr("href"));
+}
+
+// collapse metadata
+$('.tx-dlf-metadata').on("click", function (evt) {
+    $('.secondpart').toggle();
+})
+
 $('.tx-dlf-navigation-double a, .tx-dlf-navigation-double span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-doublepage.svg" alt="Show double pages">');
