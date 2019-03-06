@@ -179,10 +179,10 @@ div#tx-dlf-fulltextselection {
     padding-top: 0px;
 }
 
-dd.secondpart {
+.tx-dlf-metadata dd.secondpart {
     display: none;
 }
 
-dt.secondpart {
+.tx-dlf-metadata dt.secondpart {
     display: none;
 }
