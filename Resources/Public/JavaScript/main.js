@@ -38,6 +38,15 @@ if ($('.tx-dlf-navigation-listview a').length > 0) {
     $('.meta-actions #backlink').attr( "href", $('.tx-dlf-navigation-listview a').attr("href"));
 }
 
+$(".tx-dlf-zoomin").click(function() { tx_dlf_viewer.map.zoomIn(); });
+$(".tx-dlf-zoomout").click(function() { tx_dlf_viewer.map.zoomOut(); });
+$(".tx-dlf-navigation-rotate-right a").click(function () {
+    tx_dlf_viewer.map.rotate(90);
+});
+$(".tx-dlf-navigation-rotate-left a").click(function () {
+    tx_dlf_viewer.map.rotate(-90);
+});
+
 // collapse metadata
 $('.tx-dlf-metadata').on("click", function (evt) {
     $('.secondpart').toggle();
