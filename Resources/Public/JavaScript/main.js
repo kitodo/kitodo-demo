@@ -24,11 +24,17 @@ $(".show-volumes").each(function () {
 
 $(".show-volumes").on("click", function (evt) {
     evt.preventDefault();
+
     $(this).children("a").toggleClass("down");
     $(this).parent().find("ol").toggle();
+
+    if ($(this).children("a").text() == "Details einblenden") {
+        $(this).children("a").text("Details ausblenden");
+    } else {
+        $(this).children("a").text("Details einblenden");
+    }
+
 });
-
-
 
 
 // Detailview
@@ -59,9 +65,19 @@ $(".tx-dlf-navigation-rotate-left a").click(function () {
 });
 
 // collapse metadata
-$('.tx-dlf-metadata').on("click", function (evt) {
+$(".tx-dlf-metadata .show-metadata").on("click", function (evt) {
+    evt.preventDefault();
+
+    $(this).children("a").toggleClass("down");
     $('.secondpart').toggle();
-})
+
+    if ($(this).children("a").text() == "Details einblenden") {
+        $(this).children("a").text("Details ausblenden");
+    } else {
+        $(this).children("a").text("Details einblenden");
+    }
+
+});
 
 $('.tx-dlf-navigation-double a, .tx-dlf-navigation-double span')
     .text("")

@@ -12,19 +12,50 @@
 }
 
 .tx-dlf-listview-list li .show-volumes a.show-volumes-expand {
-    background: url(../Images/icon-arrow-up.svg) no-repeat left center #999;
+    background: url(../Images/icon-arrow-down.svg) no-repeat left center #999;
 }
 
 .tx-dlf-listview-list li .show-volumes a.show-volumes-expand:hover {
-    background: url(../Images/icon-arrow-up.svg) no-repeat left center #005182;
+    background: url(../Images/icon-arrow-down.svg) no-repeat left center #005182;
 }
 
 .tx-dlf-listview-list li .show-volumes a.show-volumes-expand.down {
-    background: url(../Images/icon-arrow-down.svg) no-repeat left center #0071bc;
+    background: url(../Images/icon-arrow-up.svg) no-repeat left center #0071bc;
 }
 
 .tx-dlf-listview-list li .show-volumes a.show-volumes-expand.down:hover {
+    background: url(../Images/icon-arrow-up.svg) no-repeat left center #005182;
+}
+
+/*.tx-dlf-metadata .show-metadata {*/
+    /*position: absolute;*/
+    /*top: 56px;*/
+    /*left: 10px;*/
+/*}*/
+
+.tx-dlf-metadata .show-metadata a {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 4px 10px 4px 30px;
+    font-weight: 400;
+}
+
+.tx-dlf-metadata .show-metadata a.show-metadata-expand {
+    background: url(../Images/icon-arrow-down.svg) no-repeat left center #999;
+}
+
+.tx-dlf-metadata .show-metadata a.show-metadata-expand:hover {
     background: url(../Images/icon-arrow-down.svg) no-repeat left center #005182;
+}
+
+.tx-dlf-metadata .show-metadata a.show-metadata-expand.down {
+    background: url(../Images/icon-arrow-up.svg) no-repeat left center #0071bc;
+}
+
+.tx-dlf-metadata .show-metadata a.show-metadata-expand.down:hover {
+    background: url(../Images/icon-arrow-up.svg) no-repeat left center #005182;
 }
 
 
