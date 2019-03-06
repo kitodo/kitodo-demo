@@ -217,3 +217,30 @@ div#tx-dlf-fulltextselection {
 .tx-dlf-metadata dt.secondpart {
     display: none;
 }
+
+#tx-dlf-search-suggest {
+    background-color: white;
+
+}
+
+#tx-dlf-search-suggest ul {
+    list-style-type: none;
+    width: calc(300px + 20vw) !important;
+    left: 0px !important;
+
+}
+
+#tx-dlf-search-suggest ul li {
+    padding: 10px;
+
+}
+
+#tx-dlf-search-suggest ul li:hover {
+    background-color: #005182;
+    color: white;
+
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
