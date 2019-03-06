@@ -38,8 +38,8 @@ if ($('.tx-dlf-navigation-listview a').length > 0) {
     $('.meta-actions #backlink').attr( "href", $('.tx-dlf-navigation-listview a').attr("href"));
 }
 
-$(".tx-dlf-zoomin").click(function() { tx_dlf_viewer.map.zoomIn(); });
-$(".tx-dlf-zoomout").click(function() { tx_dlf_viewer.map.zoomOut(); });
+$(".tx-dlf-navigation-zoom-in").click(function() { tx_dlf_viewer.map.zoomIn(); });
+$(".tx-dlf-navigation-zoom-out").click(function() { tx_dlf_viewer.map.zoomOut(); });
 $(".tx-dlf-navigation-rotate-right a").click(function () {
     tx_dlf_viewer.map.rotate(90);
 });
