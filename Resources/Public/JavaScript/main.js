@@ -53,10 +53,9 @@ $(".tx-dlf-metadata dd.tx-dlf-metadata-title").text(
         .substring(0, 70) + " ..."
 );
 
-
-
 $(".tx-dlf-navigation-zoom-in").click(function() { tx_dlf_viewer.map.zoomIn(); });
 $(".tx-dlf-navigation-zoom-out").click(function() { tx_dlf_viewer.map.zoomOut(); });
+
 $(".tx-dlf-navigation-rotate-right a").click(function () {
     tx_dlf_viewer.map.rotate(90);
 });
