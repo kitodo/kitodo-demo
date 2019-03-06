@@ -1,6 +1,7 @@
 
 $('.tx-dlf-basket-button a').text("merken");
 $('.add-to-cart a').text("merken");
+$('#submitBasketForm').text("merken");
 
 
 // listview
