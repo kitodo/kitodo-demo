@@ -227,6 +227,7 @@ div#tx-dlf-fulltextselection {
     list-style-type: none;
     width: calc(300px + 20vw) !important;
     left: 0px !important;
+    top: 0px !important;
 
 }
 
