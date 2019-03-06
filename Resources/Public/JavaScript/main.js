@@ -1,4 +1,6 @@
 
+$('.tx-dlf-basket-button a').text("merken");
+
 
 // listview
 
