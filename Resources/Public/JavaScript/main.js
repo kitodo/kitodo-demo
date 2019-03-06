@@ -8,6 +8,8 @@ $(".tx-dlf-listview-list ol").hide();
 
 $(".tx-dlf-listview-list ol").hide();
 
+$(".tx-dlf-search-numHits").hide();
+
 
 // show-volumes-expand
 // show-volumes-minimize
