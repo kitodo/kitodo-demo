@@ -220,12 +220,13 @@ div#tx-dlf-fulltextselection {
 
 #tx-dlf-search-suggest {
     background-color: white;
+    width: 55%;
 
 }
 
 #tx-dlf-search-suggest ul {
     list-style-type: none;
-    width: calc(300px + 20vw) !important;
+    width: 100% !important;
     left: 0px !important;
     top: 0px !important;
 
@@ -244,4 +245,9 @@ div#tx-dlf-fulltextselection {
 
 .ui-helper-hidden-accessible {
     display: none;
+}
+
+#tx-dlf-search-suggest ul li div {
+    border-bottom: 1px solid #acacac;
+
 }
