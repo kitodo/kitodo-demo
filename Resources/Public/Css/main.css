@@ -226,9 +226,18 @@ div#tx-dlf-fulltextselection {
 
 #tx-dlf-search-suggest ul {
     list-style-type: none;
-    width: 100% !important;
-    left: 0px !important;
-    top: 0px !important;
+    /*width: 100% !important;*/
+    /*left: 0px !important;*/
+    /*top: 0px !important;*/
+
+    left: 25% !important;
+    position: absolute !important;
+    width: 50% !important;
+    background-color: #ffffff;
+    z-index: 99;
+    border: 1px solid #0071bc;
+    margin-top: 10px;
+
 
 }
 

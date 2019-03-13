@@ -744,8 +744,8 @@ detail-view
     left: 0;
     display: table-cell;
     vertical-align: top;
-    /*width: calc(25% - 3px);*/
-    width: calc(45% - 3px);
+    width: calc(25% - 3px);
+    /*width: calc(45% - 3px);*/
     padding-left: 3px;
 }
 
