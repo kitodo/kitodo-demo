@@ -3,6 +3,8 @@ $('.tx-dlf-basket-button a').text("merken");
 $('.add-to-cart a').text("merken");
 $('#submitBasketForm').text("merken");
 
+$('#kitodo-logo').attr("href", "index.php?id=1");
+
 
 // listview
 
