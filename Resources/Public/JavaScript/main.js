@@ -161,12 +161,15 @@ $('.tx-dlf-navigation-editRemove a, .tx-dlf-navigation-editRemove span')
 
 $('.tx-dlf-navigation-magnifier a, .tx-dlf-navigation-magnifier span')
     .text("")
-    .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-magnifier.svg" alt="Lupe">');
+    .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-magnifying.svg" alt="Lupe">');
 
 
-$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-edit'));
+$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-edit">' + $('.tx-dlf-navigation-edit').html() + '</li>');
 
-$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-editRemove'));
+$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-editRemove" style="padding-left: 4px;">' + $('.tx-dlf-navigation-editRemove').html() + '</li>');
 
-$('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-magnifier'));
+$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-magnifier" style="padding-left: 4px;">' + $('.tx-dlf-navigation-magnifier').html() + '</li>');
 
+$('div.tx-dlf-navigation-edit').hide();
+$('div.tx-dlf-navigation-editRemove').hide();
+$('div.tx-dlf-navigation-magnifier').hide();

@@ -260,3 +260,7 @@ div#tx-dlf-fulltextselection {
     border-bottom: 1px solid #acacac;
 
 }
+
+#ov_map {
+    max-height: 200px;
+}

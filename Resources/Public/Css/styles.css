@@ -692,7 +692,8 @@ detail-view
     display: inline-block;
 }
 
-.tx-dlf-navigation li a {
+.tx-dlf-navigation li a,
+.tx-dlf-pageview div a {
     border-radius: 3px;
     padding: 5px;
     line-height: 0;
