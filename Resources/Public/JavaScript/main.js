@@ -151,6 +151,18 @@ $('.tx-dlf-navigation-listview a, .tx-dlf-navigation-listview span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-skipright.svg" alt="Last Page">');
 
+$('.tx-dlf-navigation-edit a, .tx-dlf-navigation-edit span')
+    .text("")
+    .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-selection.svg" alt="Ausschnitt auswählen">');
+
+$('.tx-dlf-navigation-editRemove a, .tx-dlf-navigation-editRemove span')
+    .text("")
+    .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-selection-x.svg" alt="Ausschnitt entfernen">');
+
+$('.tx-dlf-navigation-magnifier a, .tx-dlf-navigation-magnifier span')
+    .text("")
+    .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-magnifier.svg" alt="Lupe">');
+
 
 $('ul.tx-dlf-navigation').append($('.tx-dlf-navigation-edit'));
 
