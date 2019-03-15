@@ -256,3 +256,16 @@ div#tx-dlf-fulltextselection {
 #ov_map {
     max-height: 200px;
 }
+
+.meta-is-version {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    color: #f94a15;
+    font-weight: 800;
+    border-radius: 3px;
+    padding: 5px;
+    webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2);
+}
