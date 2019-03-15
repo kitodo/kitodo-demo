@@ -788,12 +788,12 @@ detail-view
 }
 
 .detail-view-itemoptions .dropdown-menu label:hover {
-    background: url(../img/icon-arrow-down.svg) no-repeat right center #005182;
+    background: url(../Images/icon-arrow-down.svg) no-repeat right center #005182;
     color: #fff;
     }
 
 .detail-view-itemdetails .dropdown-menu label {
-    background: url(../img/icon-arrow-down-dark.svg) no-repeat right center #d8d8d8;
+    background: url(../Images/icon-arrow-down-dark.svg) no-repeat right center #d8d8d8;
     background-size: 24px auto;
     margin-top: 5px;
     color: #1e3946;
