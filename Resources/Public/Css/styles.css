@@ -371,6 +371,18 @@ listview
     background: #fff;
 }
 
+.dropdown-menu label {
+    display: block;
+    padding: 8px 30px 8px 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 800;
+    margin-top: 15px;
+    background: #fff;
+}
+
 .dropdown-menu input[type=checkbox] {
     display: none;
 }
@@ -739,7 +751,10 @@ detail-view
     display: table-cell;
     vertical-align: top;
     width: 50%;
-}
+    position: absolute;
+    top: 0;
+    left: 25%;
+    }
 
 .detail-view-itemoptions .detail-view-itemcontents {
     position: absolute;
@@ -773,8 +788,19 @@ detail-view
 }
 
 .detail-view-itemoptions .dropdown-menu label:hover {
-    background-color: #005182;
-}
+    background: url(../img/icon-arrow-down.svg) no-repeat right center #005182;
+    color: #fff;
+    }
+
+.detail-view-itemdetails .dropdown-menu label {
+    background: url(../img/icon-arrow-down-dark.svg) no-repeat right center #d8d8d8;
+    background-size: 24px auto;
+    margin-top: 5px;
+    color: #1e3946;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 30px 8px 15px;
+    }
 
 .detail-view-itemoptions .dropdown-menu ul {
     display: none;
@@ -795,7 +821,8 @@ detail-view
 .detail-view-itemoptions .dropdown-menu input[type=checkbox]:checked ~ label {
     background: url(../Images/icon-arrow-up.svg) no-repeat right center #0071bc;
     background-size: 24px auto;
-}
+    color: #fff;
+    }
 
 .detail-view-itemoptions .dropdown-menu input[type=checkbox]:checked ~ ul,
 .detail-view-itemoptions .dropdown-menu input[type=checkbox]:checked ~ ul ul {
@@ -852,18 +879,32 @@ detail-view
 }
 
 .detail-view-itemdetails dl {
-    padding: 10px 15px 12px 15px;
-}
+    margin: 0;
+    padding: 0;
+    }
 
-.detail-view-itemdetails dt {
+.detail-view-itemdetails dt,
+.detail-view-itemdetails label dt {
     display: inline;
     padding-right: 5px;
-}
+    font-weight: 400;
+    }
 
-.detail-view-itemdetails dd {
+.detail-view-itemdetails dd,
+.detail-view-itemdetails label dd {
     font-weight: 800;
     display: inline;
 }
+
+.detail-view-itemdetails .dropdown-menu ul dt,
+.detail-view-itemdetails .dropdown-menu ul dd {
+    padding: 5px 15px;
+    }
+
+.detail-view-itemdetails .dropdown-menu ul dt a,
+.detail-view-itemdetails .dropdown-menu ul dd a {
+    padding: 0 !important;
+    }
 
 .tx-dlf-pagegrid {
     z-index: 4;
@@ -1199,11 +1240,8 @@ footer {
 
 #footer-content p span {
     color: #999;
-}
+    }
 
-#footer-content p strong {
-    color: #f94a15;
-}
 
 
 /*----------------------------------------------------------------------
@@ -1559,13 +1597,15 @@ max 700px
     }
 
     .detail-view-itemoptions .detail-view-itemcontents,
-    .detail-view-itemoptions .detail-view-tools {
+    .detail-view-itemoptions .detail-view-tools,
+    .detail-view-itemoptions .detail-view-itemdetails {
         display: block;
         position: inherit;
         width: calc(100% - 30px);
         padding: 0;
         margin: 0 15px;
-    }
+        left: 0;
+        }
 
     .detail-view-itemdetails {
         display: block;

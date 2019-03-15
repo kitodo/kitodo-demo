@@ -89,6 +89,13 @@ page.10 {
 			wrap = |
 			required = 1
 		}
+
+		contentMetadataTitle < styles.content.get
+		contentMetadataTitle.select.where = colPos = 8
+		contentMetadataTitle.stdWrap {
+			wrap = |
+			required = 1
+		}
 	}
 
 	#file = {$resDir}/Resources/Private/Templates/DefaultTemplate.html

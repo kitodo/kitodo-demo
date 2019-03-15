@@ -62,11 +62,16 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Navigation
-                                colspan = 2
-                                colPos = 6
+                                name = Titel
+                                colspan = 1
+                                colPos = 8
                             }
                             2 {
+                                name = Navigation
+                                colspan = 1
+                                colPos = 6
+                            }
+                            3 {
                                 name = Basket
                                 colspan = 1
                                 colPos = 7

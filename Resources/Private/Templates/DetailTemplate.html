@@ -7,7 +7,7 @@
 
 			<div id="c9" class="detail-view-title">
 
-				<f:format.raw>{contentMetadata}</f:format.raw>
+				<f:format.raw>{contentMetadataTitle}</f:format.raw>
 
 			</div>
 
@@ -24,10 +24,21 @@
 			<f:format.raw>{contentTOC}</f:format.raw>
 
 			<div class="detail-view-itemdetails">
-				<dl>
-					<dt></dt>
-					<dd></dd>
-				</dl>
+
+				<div class="dropdown-menu">
+					<input type="checkbox" id="checkbox-menu3">
+					<label for="checkbox-menu3">
+						<dl>
+							<dt></dt><dd>Metadaten</dd>
+						</dl>
+					</label>
+					<ul>
+						<li class="tx-dlf-toc-act tx-dlf-toc-ifsub">
+							<f:format.raw>{contentMetadata}</f:format.raw>
+						</li>
+					</ul>
+				</div>
+
 			</div>
 
 			<div id="c16" class="detail-view-tools">
