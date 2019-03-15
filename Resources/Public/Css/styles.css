@@ -192,6 +192,8 @@ header
 header {
     margin: 15px 0;
     text-align: center;
+    z-index: 6;
+    position: relative;
 }
 
 .portal-header {
@@ -357,7 +359,7 @@ listview
     vertical-align: top;
 }
 
-.dropdown-menu label {
+.dropdown-menu li.tx-dlf-search-ifsub span.facet-sub-title {
     display: block;
     padding: 8px 30px 8px 30px;
     -webkit-user-select: none;
@@ -1197,6 +1199,10 @@ footer {
 
 #footer-content p span {
     color: #999;
+}
+
+#footer-content p strong {
+    color: #f94a15;
 }
 
 
