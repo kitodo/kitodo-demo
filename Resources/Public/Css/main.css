@@ -132,6 +132,7 @@ div#tx-dlf-fulltextselection {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     margin-right: 24px;
+    margin-left: 15px;
 }
 
 .image-manipulation .slider-container .slider .ui-slider-handle {
@@ -167,8 +168,33 @@ div#tx-dlf-fulltextselection {
     padding: 10px;
 }
 
+.slider-imagemanipulation.slider-contrast:before {
+    content: "Kontrast" !important;
+    top: 5px !important;
+}
+
+.slider-imagemanipulation.slider-saturation:before {
+    content: "Sättigung" !important;
+    top: 5px !important;
+}
+
+.slider-imagemanipulation.slider-brightness:before {
+    content: "Helligkeit" !important;
+    top: 5px !important;
+}
+
+.slider-imagemanipulation.slider-hue:before {
+    content: "Färbung" !important;
+    top: 5px !important;
+}
+
+.slider-imagemanipulation .tooltip {
+    text-align: center;
+}
+
 .image-manipulation {
     border: 1px solid #d8d8d8;
+    background-color: #ffffff;
 }
 
 .image-manipulation .checkbox label input {
@@ -280,4 +306,8 @@ dt.tx-dlf-metadata-title {
 
 .metadata-title-only .secondpart {
     display: none !important;
+}
+
+.tx-dlf-listview-preview em {
+    background-color: yellow;
 }
