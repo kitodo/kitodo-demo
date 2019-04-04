@@ -1,6 +1,6 @@
 # Install
 
-* Clone the repository in your extention path with the name 'presentation_package' with
+* Clone the repository in your extension path with the name <b>'presentation_package'</b> with
 
    <code>git clone https://github.com/kitodo/kitodo-demo.git presentation_package</code>
 
