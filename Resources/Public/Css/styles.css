@@ -318,6 +318,7 @@ collection-list
 tx-dlf-search-query
 ----------------------------------------------------------------------*/
 
+.tx-dlf-Search,
 .tx-dlf-search {
     background-color: #f3f3f3;
     padding: 30px;
@@ -403,6 +404,7 @@ listview
     display: block;
 }
 
+.tx-dlf-Statistics,
 .tx-dlf-statistics {
     background-color: rgba(0,0,0,0.5);
     color: #fff;
@@ -419,6 +421,7 @@ listview
     font-weight: 800;
 }
 
+.tx-dlf-ListView,
 .tx-dlf-listview {
     background-color: #fff;
     border-radius: 3px;
@@ -554,6 +557,12 @@ dd.tx-dlf-metadata-title {
     padding-bottom: 5px;
 }
 
+dt.tx-dlf-metadata-type,
+dt.tx-dlf-metadata-language,
+dt.tx-dlf-metadata-collection,
+dt.tx-dlf-metadata-purl,
+dt.tx-dlf-metadata-urn,
+dt.tx-dlf-metadata-oai,
 dt.tx-dlf-metadata-title,
 dt.tx-dlf-metadata-place,
 dt.tx-dlf-metadata-type,
@@ -571,6 +580,16 @@ dd.tx-dlf-metadata-author,
 .tx-dlf-listview-list li ol li dd {
     font-weight: 800;
 }
+
+.tx-dlf-Metadata dl dt,
+.tx-dlf-Metadata dl dd,
+dd.secondpart, 
+dt.secondpart, 
+dd.tx-dlf-metadata-title, 
+dt.tx-dlf-metadata-title {
+    display: block !important;
+}
+
 
 .tx-dlf-listview-list .tx-dlf-listview-thumbnail {
     display: block;
@@ -754,7 +773,7 @@ detail-view
     position: absolute;
     top: 0;
     left: 25%;
-    }
+}
 
 .detail-view-itemoptions .detail-view-itemcontents {
     position: absolute;
@@ -790,7 +809,7 @@ detail-view
 .detail-view-itemoptions .dropdown-menu label:hover {
     background: url(../Images/icon-arrow-down.svg) no-repeat right center #005182;
     color: #fff;
-    }
+}
 
 .detail-view-itemdetails .dropdown-menu label {
     background: url(../Images/icon-arrow-down-dark.svg) no-repeat right center #d8d8d8;
@@ -800,7 +819,7 @@ detail-view
     border-radius: 3px;
     cursor: pointer;
     padding: 8px 30px 8px 15px;
-    }
+}
 
 .detail-view-itemoptions .dropdown-menu ul {
     display: none;
@@ -822,7 +841,7 @@ detail-view
     background: url(../Images/icon-arrow-up.svg) no-repeat right center #0071bc;
     background-size: 24px auto;
     color: #fff;
-    }
+}
 
 /* Toolbox displaying */
 .detail-view-tools .dropdown-menu input[type=checkbox]:checked ~ div.tx-dlf-Toolbox  ul,
@@ -884,14 +903,14 @@ detail-view
 .detail-view-itemdetails dl {
     margin: 0;
     padding: 0;
-    }
+}
 
 .detail-view-itemdetails dt,
 .detail-view-itemdetails label dt {
     display: inline;
     padding-right: 5px;
     font-weight: 400;
-    }
+}
 
 .detail-view-itemdetails dd,
 .detail-view-itemdetails label dd {
@@ -902,13 +921,14 @@ detail-view
 .detail-view-itemdetails .dropdown-menu ul dt,
 .detail-view-itemdetails .dropdown-menu ul dd {
     padding: 5px 15px;
-    }
+}
 
 .detail-view-itemdetails .dropdown-menu ul dt a,
 .detail-view-itemdetails .dropdown-menu ul dd a {
     padding: 0 !important;
-    }
+}
 
+.tx-dlf-PageGrid,
 .tx-dlf-pagegrid {
     z-index: 4;
     width: 50%;
@@ -930,6 +950,7 @@ detail-view
     display: inline-block;
 }
 
+.tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail,
 .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail {
     position: relative;
     display: block;
@@ -938,6 +959,7 @@ detail-view
     height: 60px;
 }
 
+.tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail a,
 .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail a {
     display: block;
     width: 25px;
@@ -949,6 +971,7 @@ detail-view
     left: 0;
 }
 
+.tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail a:hover,
 .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail a:hover {
     top: -10px;
     left: -5px;
@@ -956,9 +979,14 @@ detail-view
     border: 2px solid #0071BC;
 }
 
+.tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail img,
 .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail img {
     width: 100%;
     height: auto;
+}
+
+.tx-dlf-pagegrid-pagination {
+    display: none;
 }
 
 /*----------------------------------------------------------------------
@@ -1614,6 +1642,7 @@ max 700px
         display: block;
     }
 
+    .tx-dlf-PageGrid,
     .tx-dlf-pagegrid {
         width: calc(100% - 30px);
     }
@@ -1622,15 +1651,18 @@ max 700px
         margin-bottom: 15px;
     }
 
+    .tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail,
     .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail {
         margin: 5px;
         height: auto;
     }
 
+    .tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail a,
     .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail a {
         position: inherit;
     }
 
+    .tx-dlf-PageGrid .tx-dlf-pagegrid-thumbnail a:hover,
     .tx-dlf-pagegrid .tx-dlf-pagegrid-thumbnail a:hover {
         top: 0;
         left: 0;
