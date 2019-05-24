@@ -94,6 +94,11 @@ li.tx-dlf-navigation-pageselect label {
 div#tx-dlf-fulltextselection {
     padding: 10px;
     margin-top: 40px;
+    position: absolute;
+}
+
+div#tx-dlf-fulltextselection span.textline {
+    display: block;
 }
 
 
