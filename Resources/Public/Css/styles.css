@@ -825,7 +825,7 @@ detail-view
     }
 
 /* Toolbox displaying */
-.detail-view-tools .dropdown-menu input[type=checkbox]:checked ~ div.tx-dlf-Toolbox  ul,
+.detail-view-tools .dropdown-menu input[type=checkbox]:checked ~ div.tx-dlf-toolbox  ul,
 /* TOC displaying */
 .detail-view-itemoptions .dropdown-menu input[type=checkbox]:checked ~ ul,
 .detail-view-itemoptions .dropdown-menu input[type=checkbox]:checked ~ ul ul {
