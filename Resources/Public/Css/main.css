@@ -95,8 +95,9 @@ div#tx-dlf-fulltextselection {
     padding: 10px;
     margin-top: 43px;
     position: absolute;
-    z-index: 100; /* Text over image */
-    background-color: #fff;
+    z-index: 2 /* Full-Text over image, but behinde drop-down-menu */
+    background-color: #f1f1f1;
+    margin-left: 3px;
     opacity: 0.9; /* see image behind text box */
 }
 
