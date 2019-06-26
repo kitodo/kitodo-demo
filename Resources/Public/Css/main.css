@@ -58,7 +58,8 @@
 aside .tx-dlf-search {
     margin: 0;
     margin-right: 15px;
-    padding: 0px;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 li.tx-dlf-navigation-pageselect label {
