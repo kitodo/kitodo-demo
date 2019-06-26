@@ -9,11 +9,17 @@ $('#kitodo-logo').attr("href", "index.php?id=1");
 // listview
 
 // autocomplete
-$("#tx-dlf-search-suggest ul li div").text(
-    $("#tx-dlf-search-suggest ul li div")
+$('#tx-dlf-search-query').keypress(function () {
+    console.log($("#tx-dlf-search-suggest ul li div")
         .text()
-        .substr(0, 70) + " ..."
-);
+        .substr(0, 70) + " ...");
+    $("#tx-dlf-search-suggest ul li div").text(
+        $("#tx-dlf-search-suggest ul li div")
+            .text()
+            .substr(0, 70) + " ..."
+    );
+});
+
 
 $(".tx-dlf-listview-list ol").hide();
 
@@ -151,6 +157,28 @@ $('.tx-dlf-navigation-listview a, .tx-dlf-navigation-listview span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-skipright.svg" alt="Last Page">');
 
+
+if ($('.tx-dlf-navigation-edit').length) {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-edit">' + $('.tx-dlf-navigation-edit').html() + '</li>');
+} else {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-edit"><span></span></li>');
+}
+
+if ($('.tx-dlf-navigation-editRemove').length) {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-editRemove" style="padding-left: 4px;">' + $('.tx-dlf-navigation-editRemove').html() + '</li>');
+} else {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-editRemove" style="padding-left: 4px;"><span></span></li>');
+}
+
+if ($('.tx-dlf-navigation-magnifier').length) {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-magnifier" style="padding-left: 4px;">' + $('.tx-dlf-navigation-magnifier').html() + '</li>');
+} else {
+    $('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-magnifier" style="padding-left: 4px;"><span></span></li>');
+}
+
+
+
+
 $('.tx-dlf-navigation-edit a, .tx-dlf-navigation-edit span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-selection.svg" alt="Ausschnitt auswählen">');
@@ -163,12 +191,6 @@ $('.tx-dlf-navigation-magnifier a, .tx-dlf-navigation-magnifier span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-magnifying.svg" alt="Lupe">');
 
-
-$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-edit">' + $('.tx-dlf-navigation-edit').html() + '</li>');
-
-$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-editRemove" style="padding-left: 4px;">' + $('.tx-dlf-navigation-editRemove').html() + '</li>');
-
-$('ul.tx-dlf-navigation').append('<li class="tx-dlf-navigation-magnifier" style="padding-left: 4px;">' + $('.tx-dlf-navigation-magnifier').html() + '</li>');
 
 $('div.tx-dlf-navigation-edit').hide();
 $('div.tx-dlf-navigation-editRemove').hide();
