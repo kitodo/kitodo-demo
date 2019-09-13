@@ -98,27 +98,53 @@ page.10 {
 		}
 	}
 
-	#file = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
+
+    ## Template file name must be the same as the ID / Name of the backendlayout
+    ## Defined in Page.txt
+    ## ID should alphnumerical
+    templateName = TEXT
+    templateName.stdWrap {
+        cObject = TEXT
+        cObject {
+            data = levelfield:-2,backend_layout_next_level,slide
+            override.field = backend_layout
+
+            #required = 1
+
+            split {
+                token = pagets__
+                cObjNum = 1
+                1.current = 1
+            }
+        }
+
+        ifEmpty  = Default
+
+    }
+
 }
 
-page.10.file.stdWrap.cObject = CASE
-page.10.file.stdWrap.cObject {
-	key.data = pagelayout
-
-	# Default Template
-	default = TEXT
-	default.value = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
-
-	pagets__1 < .default
-
-	detail = TEXT
-	detail.value = {$resDir}/Resources/Private/Templates/DetailTemplate.html
-
-	pagets__2 < .detail
-
-	onecol = TEXT
-	onecol.value = {$resDir}/Resources/Private/Templates/OneColumn.html
-
-	pagets__3 < .onecol
-
-}
+# no unnecessary repetitions
+# Directory has already been set
+# Name of the template is defined in Page.txt as Key / ID
+#page.10.file.stdWrap.cObject = CASE
+#page.10.file.stdWrap.cObject {
+#	key.data = pagelayout
+#
+#	# Default Template
+#	default = TEXT
+#	default.value = {$resDir}/Resources/Private/Templates/DefaultTemplate.html
+#
+#	pagets__1 < .default
+#
+#	detail = TEXT
+#	detail.value = {$resDir}/Resources/Private/Templates/DetailTemplate.html
+#
+#	pagets__2 < .detail
+#
+#	onecol = TEXT
+#	onecol.value = {$resDir}/Resources/Private/Templates/OneColumn.html
+#
+#	pagets__3 < .onecol
+#
+#}
