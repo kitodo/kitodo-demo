@@ -319,7 +319,7 @@ collection-list
 tx-dlf-search-query
 ----------------------------------------------------------------------*/
 
-.tx-dlf-search {
+.tx-dlf-Search {
     background-color: #f3f3f3;
     padding: 30px;
     border-radius: 3px;
@@ -420,7 +420,7 @@ listview
     font-weight: 800;
 }
 
-.tx-dlf-listview {
+.tx-dlf-ListView {
     background-color: #fff;
     border-radius: 3px;
     webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2);
@@ -710,7 +710,7 @@ detail-view
 }
 
 .tx-dlf-navigation li a,
-.tx-dlf-pageview div a {
+.tx-dlf-PageView div a {
     border-radius: 3px;
     padding: 5px;
     line-height: 0;
@@ -871,7 +871,7 @@ detail-view
     cursor: pointer;
 }
 
-.tx-dlf-pageview .tx-dlf-interaction-addbasket {
+.tx-dlf-PageView .tx-dlf-interaction-addbasket {
     text-align: center;
     margin: 15px;
 }
