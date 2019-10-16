@@ -779,10 +779,11 @@ detail-view
 }
 
 .detail-view-itemdetails .dropdown-menu label {
-  background: url(../Images/icon-arrow-down-dark.svg) no-repeat right center #d8d8d8;
+  /* same color for 'Metadaten' like 'Inhaltsverzeichni' */
+  background: url(../Images/icon-arrow-down.svg) no-repeat right center #0071bc;
   background-size: 24px auto;
   margin-top: 5px;
-  color: #1e3946;
+  color: #fff;
   border-radius: 3px;
   cursor: pointer;
   padding: 8px 30px 8px 15px;
