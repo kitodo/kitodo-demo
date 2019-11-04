@@ -60,16 +60,16 @@ if ($('.tx-dlf-navigation-listview a').length > 0) {
     $('.meta-actions #backlink').attr( "href", $('.tx-dlf-navigation-listview a').attr("href"));
 }
 
-$(".tx-dlf-metadata dd.tx-dlf-metadata-title").attr("data-full", $(".tx-dlf-metadata dd.tx-dlf-metadata-title").text());
+$(".tx-dlf-Metadata dd.tx-dlf-metadata-title").attr("data-full", $(".tx-dlf-Metadata dd.tx-dlf-metadata-title").text());
 
-$(".tx-dlf-metadata dd.tx-dlf-metadata-title").text(
-    $(".tx-dlf-metadata dd.tx-dlf-metadata-title")
+$(".tx-dlf-Metadata dd.tx-dlf-metadata-title").text(
+    $(".tx-dlf-Metadata dd.tx-dlf-metadata-title")
         .text()
         .substring(0, 70) + " ..."
 );
 
 // collapse metadata
-$(".tx-dlf-metadata .show-metadata").on("click", function (evt) {
+$(".tx-dlf-Metadata .show-metadata").on("click", function (evt) {
     evt.preventDefault();
 
     $(this).children("a").toggleClass("down");
@@ -77,13 +77,13 @@ $(".tx-dlf-metadata .show-metadata").on("click", function (evt) {
 
     if ($(this).children("a").text() == "Details einblenden") {
         $(this).children("a").text("Details ausblenden");
-        $(".tx-dlf-metadata dd.tx-dlf-metadata-title").text(
-            $(".tx-dlf-metadata dd.tx-dlf-metadata-title").attr("data-full")
+        $(".tx-dlf-Metadata dd.tx-dlf-metadata-title").text(
+            $(".tx-dlf-Metadata dd.tx-dlf-metadata-title").attr("data-full")
         );
     } else {
         $(this).children("a").text("Details einblenden");
-        $(".tx-dlf-metadata dd.tx-dlf-metadata-title").attr("data-full",
-            $(".tx-dlf-metadata dd.tx-dlf-metadata-title")
+        $(".tx-dlf-Metadata dd.tx-dlf-metadata-title").attr("data-full",
+            $(".tx-dlf-Metadata dd.tx-dlf-metadata-title")
                 .text()
                 .substring(0, 70) + " ..."
             );
