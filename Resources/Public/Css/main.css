@@ -92,7 +92,8 @@ li.tx-dlf-navigation-pageselect label {
     color: white;
 }
 
-div#tx-dlf-fulltextselection {
+div#tx-dlf-fulltextselection,
+div#tx-dlf-annotationselection {
     padding: 10px;
     margin-top: 40px;
 }
