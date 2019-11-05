@@ -404,7 +404,7 @@ listview
     display: block;
 }
 
-.tx-dlf-statistics {
+.tx-dlf-Statistics {
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     padding: 10px 30px;
@@ -412,11 +412,11 @@ listview
     margin: 0px 15px;
 }
 
-.tx-dlf-statistics p {
+.tx-dlf-Statistics p {
     display: inline;
 }
 
-.tx-dlf-statistics p:first-child {
+.tx-dlf-Statistics p:first-child {
     font-weight: 800;
 }
 
@@ -1291,7 +1291,7 @@ max 1024px
         grid-template-columns: 1fr 1fr;
     }
 
-    .tx-dlf-statistics {
+    .tx-dlf-Statistics {
         background-color: rgba(153,153,153,0.9);
     }
 
@@ -1483,7 +1483,7 @@ max 700px
         padding: 15px;
     }
 
-    .tx-dlf-statistics {
+    .tx-dlf-Statistics {
         padding: 15px;
     }
 
