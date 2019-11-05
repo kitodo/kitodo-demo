@@ -834,7 +834,8 @@ detail-view
 
 .detail-view-itemoptions .dropdown-menu ul li a,
 .detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsImagemanipulation,
-.detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsFulltext {
+.detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsFulltext,
+.detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsAnnotation {
     padding: 5px 15px;
 }
 
