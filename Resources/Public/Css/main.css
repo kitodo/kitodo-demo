@@ -19,13 +19,13 @@
     background: url(../Images/icon-arrow-up.svg) no-repeat left center #005182;
 }
 
-/*.tx-dlf-metadata .show-metadata {*/
+/*.tx-dlf-Metadata .show-metadata {*/
     /*position: absolute;*/
     /*top: 56px;*/
     /*left: 10px;*/
 /*}*/
 
-.tx-dlf-metadata .show-metadata a {
+.tx-dlf-Metadata .show-metadata a {
     display: inline-block;
     color: #fff;
     border-radius: 3px;
@@ -34,19 +34,19 @@
     font-weight: 400;
 }
 
-.tx-dlf-metadata .show-metadata a.show-metadata-expand {
+.tx-dlf-Metadata .show-metadata a.show-metadata-expand {
     background: url(../Images/icon-arrow-down.svg) no-repeat left center #999;
 }
 
-.tx-dlf-metadata .show-metadata a.show-metadata-expand:hover {
+.tx-dlf-Metadata .show-metadata a.show-metadata-expand:hover {
     background: url(../Images/icon-arrow-down.svg) no-repeat left center #005182;
 }
 
-.tx-dlf-metadata .show-metadata a.show-metadata-expand.down {
+.tx-dlf-Metadata .show-metadata a.show-metadata-expand.down {
     background: url(../Images/icon-arrow-up.svg) no-repeat left center #0071bc;
 }
 
-.tx-dlf-metadata .show-metadata a.show-metadata-expand.down:hover {
+.tx-dlf-Metadata .show-metadata a.show-metadata-expand.down:hover {
     background: url(../Images/icon-arrow-up.svg) no-repeat left center #005182;
 }
 
@@ -230,11 +230,11 @@ div#tx-dlf-fulltextselection {
     padding-top: 0px;
 }
 
-/*.tx-dlf-metadata dd.secondpart {*/
+/*.tx-dlf-Metadata dd.secondpart {*/
     /*display: none;*/
 /*}*/
 
-/*.tx-dlf-metadata dt.secondpart {*/
+/*.tx-dlf-Metadata dt.secondpart {*/
     /*display: none;*/
 /*}*/
 
