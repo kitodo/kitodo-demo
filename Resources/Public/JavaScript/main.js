@@ -125,15 +125,18 @@ $('.tx-dlf-navigation-rotate-right a, .tx-dlf-navigation-rotate-right span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-rotateright.svg" alt="Rotate Right">');
 
+// first page
 $('.tx-dlf-navigation-first a, .tx-dlf-navigation-first span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-skipleft.svg" alt="First Page">');
 
-$('.tx-dlf-navigation-prev a, .tx-dlf-navigation-prev span')
+// back X page
+$('.tx-dlf-navigation-back a, .tx-dlf-navigation-back span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-doubleleft.svg" alt="Back 5 Pages">');
 
-$('.tx-dlf-navigation-back a, .tx-dlf-navigation-back span')
+// previous page
+$('.tx-dlf-navigation-prev a, .tx-dlf-navigation-prev span')
     .text("")
     .append('<img src="../../typo3conf/ext/presentation_package/Resources/Public/Images/icon-singleleft.svg" alt="Previous Page">');
 
