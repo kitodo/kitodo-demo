@@ -14,7 +14,7 @@ TCEFORM.tt_content.header_layout{
 ## Backend-Layouts definieren
 mod.web_layout.BackendLayouts {
 
-	1 {
+	DefaultTemplate {
 		title = Default Layout (Header + 2 Spalten)
 		config {
 			backend_layout {
@@ -52,7 +52,7 @@ mod.web_layout.BackendLayouts {
             }
 		}
 	}
-    2 {
+    DetailTemplate {
         title = Presentation Detail Layout
         config {
             backend_layout {
@@ -110,7 +110,7 @@ mod.web_layout.BackendLayouts {
             }
         }
     }
-    3 {
+    OneColumn {
         title = Default Layout (Header + Content)
         config {
             backend_layout {
