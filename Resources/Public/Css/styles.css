@@ -832,6 +832,7 @@ detail-view
     display: block;
 }
 
+.no-fulltext,
 .detail-view-itemoptions .dropdown-menu ul li a,
 .detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsImagemanipulation,
 .detail-view-itemoptions .dropdown-menu ul li .tx-dlf-toolsFulltext {
