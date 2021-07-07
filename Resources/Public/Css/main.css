@@ -94,7 +94,16 @@ li.tx-dlf-navigation-pageselect label {
 
 div#tx-dlf-fulltextselection {
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 43px;
+    position: absolute;
+    z-index: 2; /* Full-Text over image, but behinde drop-down-menu */
+    background-color: #f1f1f1;
+    margin-left: 3px;
+    opacity: 0.9; /* see image behind text box */
+}
+
+div#tx-dlf-fulltextselection span.textline {
+    display: block;
 }
 
 
