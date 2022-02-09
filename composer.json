@@ -7,9 +7,12 @@
   "keywords": ["TYPO3 CMS"],
   "version": "1.0.0",
   "require": {
-    "typo3/cms": "^8.7",
-    "solarium/solarium": "^4.0"
+    "typo3/cms-core": "^8.7 || ^9.5",
+    "fluidtypo3/flux": "^9"
   },
   "autoload": {
+    "psr-4": {
+      "Kitodo\\PresentationPackage\\": "Classes/"
+    }
   }
 }

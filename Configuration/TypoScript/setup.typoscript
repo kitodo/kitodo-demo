@@ -1,0 +1,14 @@
+plugin.tx_presentationpackage.view {
+    templateRootPaths.0 = EXT:presentation_package/Resources/Private/Templates
+    partialRootPaths.0 = EXT:presentation_package/Resources/Private/Partials
+    layoutRootPaths.0 = EXT:presentation_package/Resources/Private/Layouts
+}
+
+page.includeCSS {
+    main = EXT:presentation_package/Resources/Public/Css/main.css
+    styles = EXT:presentation_package/Resources/Public/Css/styles.css
+}
+
+page.includeJS {
+    main = EXT:presentation_package/Resources/Public/JavaScript/main.js
+}
