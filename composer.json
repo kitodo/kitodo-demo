@@ -2,14 +2,36 @@
   "name": "kitodo/presentation_package",
   "type": "typo3-cms-extension",
   "description": "Template Package for Kitodo Presentation",
-  "homepage": "https://www.effective-webwork.de/",
+  "homepage": "https://presentation-demo.kitodo.org/",
+  "readme": "README.md",
   "license": "GPL-3.0-or-later",
-  "keywords": ["TYPO3 CMS"],
-  "version": "1.0.0",
+  "keywords": ["TYPO3 CMS", "Kitodo", "Kitodo Demo Presentation Package"],
   "require": {
-    "typo3/cms": "^8.7",
-    "solarium/solarium": "^4.0"
+    "typo3/cms-core": "~9.5.26",
+    "kitodo/presentation": ">=3.0.0"
   },
+  "authors": [
+    {
+        "name": "Christopher Timm",
+        "role": "developer",
+        "email": "timm@effective-webwork.de",
+        "homepage": "https://www.effective-webwork.de/"
+    },
+    {
+        "name": "Meyer, Sebastian",
+        "role": "maintainer",
+        "email": "sebastian@informathekar.de",
+        "homepage": "https://www.slub-dresden.de"
+    }
+  ],
   "autoload": {
+    "psr-4": {
+      "Kitodo\\presentation_package\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "presentation_package"
+    }
   }
 }
