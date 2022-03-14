@@ -202,7 +202,6 @@ header {
 }
 
 .portal-header article {
-    display: table-cell;
     vertical-align: middle;
 }
 
