@@ -1,0 +1,43 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+     xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+     xmlns:pp="http://typo3.org/ns/Kitodo/PresentationPackage/ViewHelpers">
+
+    <f:layout name="Default" />
+
+    <f:section name="Configuration">
+        <flux:form id="twoColumn" label="TwoColumn">
+            <!-- Insert fields, sheets, grid, form section objects etc. here, in this flux:form tag -->
+        </flux:form>
+
+        <flux:grid>
+            <!-- Edit this grid to change the "backend layout" structure -->
+            <flux:grid.row>
+                <flux:grid.column colPos="0" colspan="1" name="Header" label="Header" />
+                <flux:grid.column colPos="15" colspan="1" name="Basket" label="Warenkorb" />
+            </flux:grid.row>
+            <flux:grid.row>
+                <flux:grid.column colPos="1" colspan="1" name="Main" label="Hauptbereich" />
+                <flux:grid.column colPos="2" colspan="1" name="Aside" label="Rechte Spalte" />
+            </flux:grid.row>
+        </flux:grid>
+    </f:section>
+
+    <f:section name="Main">
+        <f:render partial="Header" arguments="{_all}"/>
+
+        <main>
+            <aside>
+                <v:content.render column="2" />
+            </aside>
+
+            <section id="main-content">
+                <v:content.render column="1" />
+            </section>
+        </main>
+
+        <f:render partial="Footer"/>
+    </f:section>
+
+</div>

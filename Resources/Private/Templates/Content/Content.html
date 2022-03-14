@@ -1,0 +1,32 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+     xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+    <f:layout name="Content"/>
+
+    <f:section name="Configuration">
+        <flux:form id="content"
+                   label="Content"
+                   description="Content">
+
+            <!-- Insert fields, sheets, grid, form section objects etc. here, in this flux:flexform tag -->
+        </flux:form>
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column
+                        style="width:100%;"
+                        name="content"
+                        label="content"
+                        colPos="0"
+                        colspan="1"/>
+            </flux:grid.row>
+        </flux:grid>
+    </f:section>
+
+    <f:section name="Main">
+        <ul class="content">
+            <flux:content.render area="content" />
+        </ul>
+    </f:section>
+</div>
