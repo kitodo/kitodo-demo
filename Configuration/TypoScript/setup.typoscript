@@ -10,5 +10,6 @@ page.includeCSS {
 }
 
 page.includeJS {
+    jquery = EXT:presentation_package/Resources/Public/JavaScript/vendor/jquery-1.11.2.min.js
     main = EXT:presentation_package/Resources/Public/JavaScript/main.js
 }
